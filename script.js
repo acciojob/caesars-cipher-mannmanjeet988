@@ -32,7 +32,14 @@ const lookup = {
 };
 
 function rot13(encodedStr) {
-  let decodedArr = []; // Your Result goes here
+  let decodedArr = ""; // Your Result goes here
+	for(let i =0; i< str.length; i++){
+		if(lookup[str[i]]==undefined){
+			decodedArr+=str[i]
+		}
+		else decodedArr+=lookup[str[i]]
+	}
+		
   // Only change code below this line
 
   return; //return decodedArr

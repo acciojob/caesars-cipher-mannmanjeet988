@@ -39,7 +39,7 @@ function rot13(str) {
 		}
 		else decodedArr.push([lookup[str[i]])
 	}
-	return decodedArr.join("");
+	return decodedArr;
 		
   // Only change code below this line
 
